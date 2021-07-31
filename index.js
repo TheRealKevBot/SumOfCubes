@@ -1,5 +1,10 @@
 function sumOfCubes(nums) {
-
+    total = 0
+    for (let i = 0; i < nums.length; i++) {
+        // total += nums[i]*nums[i]*nums[i]
+        total += Math.pow(nums[i], 3)
+    }
+    return total
 }
 
 console.log(sumOfCubes([1, 5, 9]), 855)
